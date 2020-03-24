@@ -1,0 +1,36 @@
+
+class OnHello extends React.Component{
+  render(){
+    return(
+      <h1 className='meu-texto'>Ola Rodrigo</h1>
+    );
+  }
+}
+
+class OnUl extends React.Component{
+  render(){
+    return(
+      <ul>
+          <li>011</li>
+          <li>022</li>
+          <li>033</li>
+        
+      </ul>
+    );
+  }
+}
+
+class OnDiv extends React.Component{
+  render(){
+    return(
+      <div>
+        <OnHello/>
+        <OnUl/>
+      </div>
+    );
+  }
+}
+
+
+const container = document.getElementById('app');
+ReactDOM.render(<OnDiv/>,container);
